@@ -1,0 +1,73 @@
+# Paprika Connection Details
+
+## Connection Information
+- **Email**: <your_email>
+- **Password**: <your_password>
+- **Tool**: Paprika Recipe CLI
+- **Command**: `paprika recipes --json` to retrieve recipes
+
+## Steps Taken
+1. Set environment variables `PAPRIKA_EMAIL` and `PAPRIKA_PASSWORD`.
+2. Authenticated with Paprika using `paprika auth`.
+3. Successfully retrieved recipes from Paprika.
+
+## Next Steps
+- Use `paprika recipes --json` to fetch all recipes with title, preparation instructions and ingredients with metric quantities.
+- Do not skip recipes. 
+
+# Paprika CLI Usage Details
+
+## Command Summary
+- `paprika recipes --json` - Fetch all recipes with full details (ingredients, directions, metadata)
+- `paprika recipes --` - Fetch recipes with basic info (titles only)
+- `paprika auth` - Authenticate with Paprika service
+
+## Authentication Setup
+1. Set environment variables:
+   ```bash
+   export PAPRIKA_EMAIL="<your_email>"
+   export PAPRIKA_PASSWORD="<your_password>"
+   ```
+
+2. Authenticate:
+   ```bash
+   paprika auth
+   ```
+
+## Data Structure
+Recipes returned as JSON array with fields:
+- `uid` - Unique identifier
+- `name` - Recipe title
+- `ingredients` - Full ingredient list with metric quantities
+- `directions` - Preparation instructions
+- `servings` - Number of servings
+- `prep_time` - Preparation time
+- `cook_time` - Cooking time
+- `total_time` - Total time
+- `source` - Recipe source
+- `source_url` - URL to original recipe
+- `image_url` - Photo URL
+- `photo` - Local filename
+- `photo_hash` - Image hash
+- `hash` - Recipe hash
+- `categories` - Recipe categories
+- `rating` - User rating
+- `in_trash` - Trash status
+- `is_pinned` - Pinned status
+- `on_favorites` - Favorites status
+- `on_grocery_list` - Grocery list status
+- `created` - Creation timestamp
+
+## Recipe Examples
+- **Tuna & Sweetcorn Pasta**: 300g pasta, 200g sweetcorn, 200g cream cheese, 145g tuna
+- **Baked Feta Pasta**: 200g feta, 500g cherry tomatoes, 400g pasta, herbs
+- **Chicken and Rice Traybake**: 270g basmati rice, 650ml stock, 8 chicken legs
+- **Butternut Squash Risotto**: 280g arborio rice, 1.1L stock, 100g Parmesan
+- **Meat and Potato Pie**: 2.75kg beef, 2.75kg potatoes, 500g flour
+
+## Key Learnings
+- All recipes include metric quantities (grams, ml, etc.)
+- Photos are stored locally with Amazon S3 URLs for full images
+- Each recipe has a unique hash for identification
+- Creation timestamps show when recipes were added to Paprika
+- Ratings and categories are currently empty (0 rating, empty categories)
