@@ -1,0 +1,47 @@
+# Google Keep Integration Workflow
+
+## Note Management
+
+**Context:** Successfully integrated Google Keep note management using gkeep-notes skill.
+
+### Setup & Authentication
+- Google Keep integration uses unofficial gkeepapi
+- Requires App Password authentication (not regular Google password)
+- Token stored at `$HOME/.openclaw/.config/gkeep/token.json`
+- Virtual environment at `$HOME/.openclaw/workspace/skills/gkeep-notes/.venv`
+
+### Workflow for Adding Items
+
+**Step 1: Locate Note ID**
+```bash
+source /home/administrator/.openclaw/workspace/skills/gkeep-notes/venv/bin/activate && python /home/administrator/.openclaw/workspace/skills/gkeep-notes/gkeep.py list```
+
+**Step 2: Add Item to Note**
+```bash
+source /home/administrator/.openclaw/workspace/skills/gkeep-notes/venv/bin/activate && python /home/administrator/.openclaw/workspace/skills/gkeep-notes/gkeep.py add <note_id> <item>```
+
+**Example Commands:**
+```bash
+# Add "abc" to <note_name>
+source /home/administrator/.openclaw/workspace/skills/gkeep-notes/venv/bin/activate && python /home/administrator/.openclaw/workspace/skills/gkeep-notes/gkeep.py add <note_id> "abc"
+
+# Add "xyz" to <note_name>
+source /home/administrator/.openclaw/workspace/skills/gkeep-notes/venv/bin/activate && python /home/administrator/.openclaw/workspace/skills/gkeep-notes/gkeep.py add <note_id> "xyz"
+```
+
+### Key Learnings
+- Note ID format: timestamp-based (e.g., `0000000000000.0000000000`)
+- Note ID above is just an example, correct Note ID needs to be obtained every time
+- Items automatically get checkbox formatting in Google Keep
+- Single quotes required for multi-word items in command line
+- Successful operations return confirmation messages
+
+### Troubleshooting
+- If note not found: verify note ID using `gkeep.py list`
+- If command fails: check virtual environment activation
+- If authentication issues: verify token.json exists and is valid
+
+### Important Notes
+- This uses unofficial Google Keep API (could break if Google changes internal API)
+- First run requires App Password setup and token generation
+- Virtual environment must be activated before using gkeep
