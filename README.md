@@ -128,4 +128,4 @@ This is the process:
 
 If you want to speed things up then here is a template from a pre-trained OpenClaw instance for you: [https://github.com/PromptingPufferfish/AI_Food_Assistant/blob/main/MEMORY.md-mealplanning](https://github.com/PromptingPufferfish/AI_Food_Assistant/blob/main/MEMORY.md-mealplanning). 
 
-** HINT: the MEMORY.md templates shared in this README file are to be used additive. Append all three of them to your existing MEMORY.md to add the whole functionality **
+**HINT: the MEMORY.md templates shared in this README file are to be used additive. Append all three of them to your existing MEMORY.md to add the whole functionality**
