@@ -61,7 +61,7 @@ Remember that OpenClaw is LLM-based and therefore not deterministic. There is no
 
 #### Option 2: use template MEMORY.md
 
-If you want to speed things up then here is a template from a pre-trained OpenClaw instance for you: [https://github.com/PromptingPufferfish/AI_Food_Assistant/blob/main/MEMORY.md-gkeep-notes](https://github.com/PromptingPufferfish/AI_Food_Assistant/blob/main/MEMORY.md-gkeep-notes). 
+If you want to speed things up then here is a template from a pre-trained OpenClaw instance for you: [https://github.com/PromptingPufferfish/AI-Food-Assistant/blob/main/MEMORY.md-gkeep-notes](https://github.com/PromptingPufferfish/AI-Food-Assistant/blob/main/MEMORY.md-gkeep-notes). 
 Make sure to backup your existing MEMORY.md in ~/.openclaw/workspace before and if your MEMORY.md already contains data the template should be appended (not the whole file replaced).
 
 ## 4. Install paprika skill
@@ -93,7 +93,7 @@ Via local OpenClaw chat as described in 3b:
 "Ok, that worked! Connection to paprika is now established. Please remember how you did that. Update /.openclaw/workspace/MEMORY.md long-term memory now with this information. Do not overwrite exising content in MEMORY.md, only add information. Tell me when you are done."
 ```
 
-If you want to speed things up then here is a template from a pre-trained OpenClaw instance for you: [https://github.com/PromptingPufferfish/AI_Food_Assistant/blob/main/MEMORY.md-paprika](https://github.com/PromptingPufferfish/AI_Food_Assistant/blob/main/MEMORY.md-paprika). 
+If you want to speed things up then here is a template from a pre-trained OpenClaw instance for you: [https://github.com/PromptingPufferfish/AI-Food-Assistant/blob/main/MEMORY.md-paprika](https://github.com/PromptingPufferfish/AI-Food-Assistant/blob/main/MEMORY.md-paprika). 
 
 ## 5. Add meal planning functionality
 Can be added as a skill or as general knowledge via MEMORY.md
@@ -126,6 +126,6 @@ This is the process:
 7. Give me a hint when everything is done.
 ```
 
-If you want to speed things up then here is a template from a pre-trained OpenClaw instance for you: [https://github.com/PromptingPufferfish/AI_Food_Assistant/blob/main/MEMORY.md-mealplanning](https://github.com/PromptingPufferfish/AI_Food_Assistant/blob/main/MEMORY.md-mealplanning). 
+If you want to speed things up then here is a template from a pre-trained OpenClaw instance for you: [https://github.com/PromptingPufferfish/AI-Food-Assistant/blob/main/MEMORY.md-mealplanning](https://github.com/PromptingPufferfish/AI-Food-Assistant/blob/main/MEMORY.md-mealplanning). 
 
 **HINT: the MEMORY.md templates shared in this README file are to be used additively. Append all three of them to your existing MEMORY.md to add the whole functionality**
