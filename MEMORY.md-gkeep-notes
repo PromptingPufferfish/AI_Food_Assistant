@@ -30,7 +30,7 @@ source /home/administrator/.openclaw/workspace/skills/gkeep-notes/venv/bin/activ
 ```
 
 ### Key Learnings
-- Note ID format: timestamp-based (e.g., `0000000000000.0000000000`)
+- Note ID format: timestamp-based (e.g., `0000000000000.0000000000`). The actual timestamp for a respective Google Keep note needs to be obtained with step 1 above.
 - Note ID above is just an example, correct Note ID needs to be obtained every time
 - Items automatically get checkbox formatting in Google Keep
 - Single quotes required for multi-word items in command line
