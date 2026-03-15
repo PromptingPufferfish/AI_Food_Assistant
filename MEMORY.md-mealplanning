@@ -62,7 +62,7 @@ Ask the user for planning parameters:
   where YYYY-WW represents the calendar week the mealplan related to this shopping list is scheduled for
 
   Format: one ingredient per line, e.g.
-  ingredient_name quantity unit (<days on which ingredient is needed>, <recipes for which ingredient is needed>)
+  ingredient_name quantity unit (recipes for which ingredient is neede>)
   No headers or additional formatting lines.
 
 ### Scaling Calculations
@@ -90,7 +90,7 @@ Ask the user for planning parameters:
 ## 6. Sync Ingredients to Google Keep
 
 - For each ingredient in the SHOPPINGLIST_YYYY-WW file, run:
-  gkeep add "ingredient_name quantity unit (<recipes for which ingredient is needed>)"
+  gkeep add "ingredient_name quantity unit (recipes for which ingredient is needed)"
 - Create a shell script containing all the gkeep add commands for all the ingredients. Execute the shell script to ensure that items are all created within one single process.
 - Use the authorized Google Keep connection (no login required).
 - Target list name: <shopping_list_name>. Obtain the <note_id> of the shopping list first by using gkeep search "<shopping_list_name>"
