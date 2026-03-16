@@ -55,7 +55,7 @@ openclaw skills list --eligible
 ### 4d. Use paprika skill
 Via local OpenClaw chat: 
 ```bash
-"/skill paprika show a list of all recipes from paprika with title, preperation instructions and ingredients including metric quantities per each ingredient."
+"/skill paprika show me a list of all recipes from paprika with title, preperation instructions and ingredients including metric quantities per each ingredient."
 ```
 
 Sometimes the skill will return something like this by mistake:
