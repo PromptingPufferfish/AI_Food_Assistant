@@ -31,7 +31,7 @@ sudo npm install -g clawhub
 
 As described in [PromptingPufferfish/gkeep-notes/blob/main/README.md](https://github.com/PromptingPufferfish/gkeep-notes/blob/main/README.md)
 
-## 4. Install paprika skill
+## 4. Install & use paprika skill
 ### 4a. Installation via clawhub.ai 
 Install paprika skill from ClawHub ([Link to paprika skill on ClawHub](https://clawhub.ai/mjrussell/paprika))
 ```bash
