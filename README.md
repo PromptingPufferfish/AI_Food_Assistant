@@ -71,7 +71,9 @@ After authentication, I can fetch all recipe titles (list --titles-only) and ret
 ```
 
 Insist that the environment variables for the authentication are set:
+```bash
 "Read ~/.openclaw/workspace/skills/paprika/SKILL.md. Environment variables for authentication are set."
+```
 
 After fixing the authentication problem you can state:
 "Ok, that worked! Connection to paprika is now established. Please remember how you did that. Update /.openclaw/workspace/MEMORY.md long-term memory now with this information. Do not overwrite exising content in MEMORY.md, only add information. Tell me when you are done."
