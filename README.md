@@ -27,42 +27,9 @@ openclaw dashboard
 sudo npm install -g clawhub
 ```
 
-## 3. Install gkeep-notes skill 
+## 3. Install & use gkeep-notes skill 
 
-### 3a. Setup
 As described in [PromptingPufferfish/gkeep-notes/blob/main/README.md](https://github.com/PromptingPufferfish/gkeep-notes/blob/main/README.md)
-
-### 3b. Make OpenClaw aware of the new skill
-Even when the skill appears as "ready" in the current version OpenClaw has problems detecting the new skill - hope this will be fixed soon. I found two workarounds to make OpenClaw aware of the new skill.
-
-#### Option 1: train OpenClaw via chat
-Open the chat UI on localhost (not WhatsApp) and prompt as follows: 
-```bash
-"Add "Example Item" to Google Keep <name of your Google Keep note>. Use your gkeep-notes skill.
-```
-OpenClaw will then most likely claim that it does not have a gkeep-notes skill. Insisting helps:
-```bash
-"You have a gkeep-notes skill. Can you read ~/.openclaw/workspace/skills/gkeep-notes/SKILL.md"
-```
-As soon as OpenClaw has detected the skill it often claims there are problems with authentication and/or the token. Coach it through the process:
-```bash
-"The initial setup including authentication and token creation is already done."
-"find  <name of your Google Keep note> and add "Example Item".
-```
-Check if item appears in your Google Keep note. If not:
-```bash
-"That did not work, try again."
-```
-If the item appears on Google Keep then OpenClaw has "learned" how to use the skill. Make sure OpenClaw retains this information in its long-term memory:
-```bash
-"Ok, that worked! The item was added to Google Keep. Please remember how you did that. Update /.openclaw/workspace/MEMORY.md long-term memory now with this information. Do not overwrite exising content in MEMORY.md, only add information. Tell me when you are done".
-```
-Remember that OpenClaw is LLM-based and therefore not deterministic. There is no guarantee that any of these prompts will work.
-
-#### Option 2: use template MEMORY.md
-
-If you want to speed things up then here is a template from a pre-trained OpenClaw instance for you: [https://github.com/PromptingPufferfish/AI-Food-Assistant/blob/main/MEMORY.md-gkeep-notes](https://github.com/PromptingPufferfish/AI-Food-Assistant/blob/main/MEMORY.md-gkeep-notes). 
-Make sure to backup your existing MEMORY.md in ~/.openclaw/workspace before and if your MEMORY.md already contains data the template should be appended (not the whole file replaced).
 
 ## 4. Install paprika skill
 ### 4a. Installation via clawhub.ai 
