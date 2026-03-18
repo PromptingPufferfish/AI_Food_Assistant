@@ -96,7 +96,7 @@ No programming skills required, describe in natural language.
 ### 5b. Add as general knowledge via MEMORY.md
 You can also train your OpenClaw via chat:
 ```bash
-Please remember the following recurring process to create a mealplan based on Paprika App recipes and add the ingredients to a Google Keep note/list. write it to MEMORY.md right now. Do not overwrite MEMORY.md, add this process only.
+"Please remember the following recurring process to create a mealplan based on Paprika App recipes and add the ingredients to a Google Keep note/list. write it to MEMORY.md right now. Do not overwrite MEMORY.md, add this process only.
 
 This is the process:
 
@@ -115,7 +115,7 @@ This is the process:
 
 7. Then execute skill gkeep ("gkeep.py add") per each line in the ITEMS* file. Create a shell script containing all the gkeep add commands for all the ingredients. Execute the shell script to ensure that items are all created within one single process. no gkeep.py login needed, authorization is already done in the background.
 
-7. Give me a hint when everything is done.
+7. Give me a hint when everything is done."
 ```
 
 If you want to speed things up then here is a template from a pre-trained OpenClaw instance for you: [https://github.com/PromptingPufferfish/AI-Food-Assistant/blob/main/MEMORY.md-mealplanning](https://github.com/PromptingPufferfish/AI-Food-Assistant/blob/main/MEMORY.md-mealplanning). 
